@@ -1,0 +1,2846 @@
+{
+  "contractName": "D",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "name": "Log",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "foo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "bar",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"}],\"name\":\"Log\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"bar\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"foo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"events\":{\"Log(string)\":{\"notice\":\"this is called an event. you can emit events from your func  and they are logged into the transaction log. in our case, this  will be useful for tracing func calls.\"}},\"kind\":\"user\",\"methods\":{\"foo()\":{\"notice\":\"Try: - call D.foo and check the transaction logs.   although D inherits A, B and C, it only called C and then A. - call D.bar and check the transaction logs.   D called C, then B, and finally A.   although super was called twice(by B and C) it only called A once.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/F/ETHDapp/call_parent_contract/contracts/calling_parent_contracts.sol\":\"D\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/ETHDapp/call_parent_contract/contracts/calling_parent_contracts.sol\":{\"keccak256\":\"0xa24adc3fb74c225336f9c6e9f96dfcc247ea613c3e07a0efe5e8324f11250b74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://037ec7d57e976589204aa87cf92c315e800596eb9e8f6cc8152ddf7095e23b84\",\"dweb:/ipfs/QmdZ1nVXgunVken6duDzPMDPsyF2JmHKapcctgnVFwCEdf\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610335806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063c29855781461003b578063febb0f7e14610045575b600080fd5b61004361004f565b005b61004d610059565b005b610057610063565b565b6100616100d5565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f432e666f6f2063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a16100d3610147565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f432e6261722063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a16101456101b9565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f422e666f6f2063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a16101b761022b565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f422e6261722063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a1610229610295565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f412e666f6f2063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a1565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f412e6261722063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a156fea264697066735822122069f37b1d2b0423ed111f902e52b9cd8bc79c72371bcafdce5535a20c876bc18864736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063c29855781461003b578063febb0f7e14610045575b600080fd5b61004361004f565b005b61004d610059565b005b610057610063565b565b6100616100d5565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f432e666f6f2063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a16100d3610147565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f432e6261722063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a16101456101b9565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f422e666f6f2063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a16101b761022b565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f422e6261722063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a1610229610295565b565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f412e666f6f2063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a1565b7fcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab60405180806020018281038252600c8152602001807f412e6261722063616c6c6564000000000000000000000000000000000000000081525060200191505060405180910390a156fea264697066735822122069f37b1d2b0423ed111f902e52b9cd8bc79c72371bcafdce5535a20c876bc18864736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "1062:501:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "1062:501:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1418:67;;;:::i;:::-;;1493;;;:::i;:::-;;1418;1466:11;:9;:11::i;:::-;1418:67::o;1493:::-;1541:11;:9;:11::i;:::-;1493:67::o;839:104::-;894:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;924:11;:9;:11::i;:::-;839:104::o;951:::-;1006:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1036:11;:9;:11::i;:::-;951:104::o;597:100::-;652:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;682:7;:5;:7::i;:::-;597:100::o;705:104::-;760:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;790:11;:9;:11::i;:::-;705:104::o;413:73::-;459:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;413:73::o;494:::-;540:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;494:73::o",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.7.6;\r\n\r\n/* Inheritance tree\r\n        A\r\n       / \\\r\n      B   C\r\n       \\ /\r\n        D\r\n */\r\n\r\ncontract A {\r\n    /** \r\n     *     this is called an event. you can emit events from your func\r\n     *  and they are logged into the transaction log. in our case, this\r\n     *  will be useful for tracing func calls.\r\n     */\r\n    event Log(string message);\r\n\r\n    function foo() public virtual {\r\n        emit Log(\"A.foo called\");\r\n    }\r\n\r\n    function bar() public virtual {\r\n        emit Log(\"A.bar called\");\r\n    }\r\n}\r\n\r\ncontract B is A {\r\n    function foo() public virtual override {\r\n        emit Log(\"B.foo called\");\r\n        A.foo();\r\n    }\r\n\r\n    function bar() public virtual override {\r\n        emit Log(\"B.bar called\");\r\n        super.bar();\r\n    }\r\n}\r\n\r\ncontract C is A {\r\n    function foo() public virtual override {\r\n        emit Log(\"C.foo called\");\r\n        super.foo();\r\n    }\r\n\r\n    function bar() public virtual override {\r\n        emit Log(\"C.bar called\");\r\n        super.bar();\r\n    }\r\n}\r\n\r\ncontract D is B, C {\r\n    /**\r\n     * Try:\r\n     * - call D.foo and check the transaction logs.\r\n     *   although D inherits A, B and C, it only called C and then A.\r\n     * - call D.bar and check the transaction logs.\r\n     *   D called C, then B, and finally A.\r\n     *   although super was called twice(by B and C) it only called A once.\r\n     */\r\n    function foo() public override(B, C) {\r\n        super.foo();\r\n    }\r\n\r\n    function bar() public override(B, C) {\r\n        super.bar();\r\n    }\r\n}",
+  "sourcePath": "F:/ETHDapp/call_parent_contract/contracts/calling_parent_contracts.sol",
+  "ast": {
+    "absolutePath": "/F/ETHDapp/call_parent_contract/contracts/calling_parent_contracts.sol",
+    "exportedSymbols": {
+      "A": [
+        56
+      ],
+      "B": [
+        87
+      ],
+      "C": [
+        118
+      ],
+      "D": [
+        148
+      ]
+    },
+    "id": 149,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 56,
+        "linearizedBaseContracts": [
+          56
+        ],
+        "name": "A",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 35,
+              "nodeType": "StructuredDocumentation",
+              "src": "167:206:1",
+              "text": "     this is called an event. you can emit events from your func\n  and they are logged into the transaction log. in our case, this\n  will be useful for tracing func calls."
+            },
+            "id": 39,
+            "name": "Log",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "message",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "389:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:16:1"
+            },
+            "src": "379:26:1"
+          },
+          {
+            "body": {
+              "id": 46,
+              "nodeType": "Block",
+              "src": "443:43:1",
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "412e666f6f2063616c6c6564",
+                        "id": 43,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "463:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_aff7fe0850e7e0b7c8475c280dd429d9d5d20a3ef9ac49267457767b659bf36a",
+                          "typeString": "literal_string \"A.foo called\""
+                        },
+                        "value": "A.foo called"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_aff7fe0850e7e0b7c8475c280dd429d9d5d20a3ef9ac49267457767b659bf36a",
+                          "typeString": "literal_string \"A.foo called\""
+                        }
+                      ],
+                      "id": 42,
+                      "name": "Log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "459:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 44,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "459:19:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 45,
+                  "nodeType": "EmitStatement",
+                  "src": "454:24:1"
+                }
+              ]
+            },
+            "functionSelector": "c2985578",
+            "id": 47,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "foo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "425:2:1"
+            },
+            "returnParameters": {
+              "id": 41,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "443:0:1"
+            },
+            "scope": 56,
+            "src": "413:73:1",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 54,
+              "nodeType": "Block",
+              "src": "524:43:1",
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "412e6261722063616c6c6564",
+                        "id": 51,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "544:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_01f293caacb98a5729d14272de2a7fc0f5d8b7a937c671b893f5e2e90b7239f2",
+                          "typeString": "literal_string \"A.bar called\""
+                        },
+                        "value": "A.bar called"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_01f293caacb98a5729d14272de2a7fc0f5d8b7a937c671b893f5e2e90b7239f2",
+                          "typeString": "literal_string \"A.bar called\""
+                        }
+                      ],
+                      "id": 50,
+                      "name": "Log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "540:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 52,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "540:19:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 53,
+                  "nodeType": "EmitStatement",
+                  "src": "535:24:1"
+                }
+              ]
+            },
+            "functionSelector": "febb0f7e",
+            "id": 55,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bar",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 48,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "506:2:1"
+            },
+            "returnParameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "524:0:1"
+            },
+            "scope": 56,
+            "src": "494:73:1",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 149,
+        "src": "149:421:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 57,
+              "name": "A",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 56,
+              "src": "588:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_A_$56",
+                "typeString": "contract A"
+              }
+            },
+            "id": 58,
+            "nodeType": "InheritanceSpecifier",
+            "src": "588:1:1"
+          }
+        ],
+        "contractDependencies": [
+          56
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 87,
+        "linearizedBaseContracts": [
+          87,
+          56
+        ],
+        "name": "B",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              47
+            ],
+            "body": {
+              "id": 71,
+              "nodeType": "Block",
+              "src": "636:61:1",
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "422e666f6f2063616c6c6564",
+                        "id": 63,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "656:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_7a22a72f40d467eb9d326233f9c02898ad0769feb2ba5194074da17678097b61",
+                          "typeString": "literal_string \"B.foo called\""
+                        },
+                        "value": "B.foo called"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_7a22a72f40d467eb9d326233f9c02898ad0769feb2ba5194074da17678097b61",
+                          "typeString": "literal_string \"B.foo called\""
+                        }
+                      ],
+                      "id": 62,
+                      "name": "Log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "652:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 64,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "652:19:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 65,
+                  "nodeType": "EmitStatement",
+                  "src": "647:24:1"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 66,
+                        "name": "A",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 56,
+                        "src": "682:1:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_A_$56_$",
+                          "typeString": "type(contract A)"
+                        }
+                      },
+                      "id": 68,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "foo",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 47,
+                      "src": "682:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 69,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "682:7:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 70,
+                  "nodeType": "ExpressionStatement",
+                  "src": "682:7:1"
+                }
+              ]
+            },
+            "functionSelector": "c2985578",
+            "id": 72,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "foo",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 60,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "627:8:1"
+            },
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "609:2:1"
+            },
+            "returnParameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "636:0:1"
+            },
+            "scope": 87,
+            "src": "597:100:1",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              55
+            ],
+            "body": {
+              "id": 85,
+              "nodeType": "Block",
+              "src": "744:65:1",
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "422e6261722063616c6c6564",
+                        "id": 77,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "764:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_5a12cfe19ac77059e10524b1bcc378fb62d9c0c87c163e24493cf51450580d21",
+                          "typeString": "literal_string \"B.bar called\""
+                        },
+                        "value": "B.bar called"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_5a12cfe19ac77059e10524b1bcc378fb62d9c0c87c163e24493cf51450580d21",
+                          "typeString": "literal_string \"B.bar called\""
+                        }
+                      ],
+                      "id": 76,
+                      "name": "Log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "760:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "760:19:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 79,
+                  "nodeType": "EmitStatement",
+                  "src": "755:24:1"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 80,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967271,
+                        "src": "790:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_B_$87",
+                          "typeString": "contract super B"
+                        }
+                      },
+                      "id": 82,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bar",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 55,
+                      "src": "790:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 83,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "790:11:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 84,
+                  "nodeType": "ExpressionStatement",
+                  "src": "790:11:1"
+                }
+              ]
+            },
+            "functionSelector": "febb0f7e",
+            "id": 86,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bar",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 74,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "735:8:1"
+            },
+            "parameters": {
+              "id": 73,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "717:2:1"
+            },
+            "returnParameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "744:0:1"
+            },
+            "scope": 87,
+            "src": "705:104:1",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 149,
+        "src": "574:238:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 88,
+              "name": "A",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 56,
+              "src": "830:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_A_$56",
+                "typeString": "contract A"
+              }
+            },
+            "id": 89,
+            "nodeType": "InheritanceSpecifier",
+            "src": "830:1:1"
+          }
+        ],
+        "contractDependencies": [
+          56
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 118,
+        "linearizedBaseContracts": [
+          118,
+          56
+        ],
+        "name": "C",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              47
+            ],
+            "body": {
+              "id": 102,
+              "nodeType": "Block",
+              "src": "878:65:1",
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "432e666f6f2063616c6c6564",
+                        "id": 94,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "898:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2faa1e609daeae0091a9f71574dcf852f84d99195ef4efdd3eea30531747813a",
+                          "typeString": "literal_string \"C.foo called\""
+                        },
+                        "value": "C.foo called"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_2faa1e609daeae0091a9f71574dcf852f84d99195ef4efdd3eea30531747813a",
+                          "typeString": "literal_string \"C.foo called\""
+                        }
+                      ],
+                      "id": 93,
+                      "name": "Log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "894:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 95,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "894:19:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 96,
+                  "nodeType": "EmitStatement",
+                  "src": "889:24:1"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 97,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967271,
+                        "src": "924:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_C_$118",
+                          "typeString": "contract super C"
+                        }
+                      },
+                      "id": 99,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "foo",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 47,
+                      "src": "924:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 100,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "924:11:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 101,
+                  "nodeType": "ExpressionStatement",
+                  "src": "924:11:1"
+                }
+              ]
+            },
+            "functionSelector": "c2985578",
+            "id": 103,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "foo",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 91,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "869:8:1"
+            },
+            "parameters": {
+              "id": 90,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "851:2:1"
+            },
+            "returnParameters": {
+              "id": 92,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "878:0:1"
+            },
+            "scope": 118,
+            "src": "839:104:1",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              55
+            ],
+            "body": {
+              "id": 116,
+              "nodeType": "Block",
+              "src": "990:65:1",
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "432e6261722063616c6c6564",
+                        "id": 108,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1010:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_62a3c18800e777677fd9be41fd72394293bef1b7ebbfea4ef0330229c8bd9bbc",
+                          "typeString": "literal_string \"C.bar called\""
+                        },
+                        "value": "C.bar called"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_62a3c18800e777677fd9be41fd72394293bef1b7ebbfea4ef0330229c8bd9bbc",
+                          "typeString": "literal_string \"C.bar called\""
+                        }
+                      ],
+                      "id": 107,
+                      "name": "Log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "1006:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 109,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1006:19:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 110,
+                  "nodeType": "EmitStatement",
+                  "src": "1001:24:1"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 111,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967271,
+                        "src": "1036:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_C_$118",
+                          "typeString": "contract super C"
+                        }
+                      },
+                      "id": 113,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bar",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 55,
+                      "src": "1036:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 114,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1036:11:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 115,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1036:11:1"
+                }
+              ]
+            },
+            "functionSelector": "febb0f7e",
+            "id": 117,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bar",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 105,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "981:8:1"
+            },
+            "parameters": {
+              "id": 104,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "963:2:1"
+            },
+            "returnParameters": {
+              "id": 106,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "990:0:1"
+            },
+            "scope": 118,
+            "src": "951:104:1",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 149,
+        "src": "816:242:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 119,
+              "name": "B",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 87,
+              "src": "1076:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_B_$87",
+                "typeString": "contract B"
+              }
+            },
+            "id": 120,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1076:1:1"
+          },
+          {
+            "baseName": {
+              "id": 121,
+              "name": "C",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 118,
+              "src": "1079:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_C_$118",
+                "typeString": "contract C"
+              }
+            },
+            "id": 122,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1079:1:1"
+          }
+        ],
+        "contractDependencies": [
+          56,
+          87,
+          118
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 148,
+        "linearizedBaseContracts": [
+          148,
+          118,
+          87,
+          56
+        ],
+        "name": "D",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              72,
+              103
+            ],
+            "body": {
+              "id": 134,
+              "nodeType": "Block",
+              "src": "1455:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 129,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967271,
+                        "src": "1466:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_D_$148",
+                          "typeString": "contract super D"
+                        }
+                      },
+                      "id": 131,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "foo",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 103,
+                      "src": "1466:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 132,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1466:11:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 133,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1466:11:1"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 123,
+              "nodeType": "StructuredDocumentation",
+              "src": "1088:324:1",
+              "text": " Try:\n - call D.foo and check the transaction logs.\n   although D inherits A, B and C, it only called C and then A.\n - call D.bar and check the transaction logs.\n   D called C, then B, and finally A.\n   although super was called twice(by B and C) it only called A once."
+            },
+            "functionSelector": "c2985578",
+            "id": 135,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "foo",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 127,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [
+                {
+                  "id": 125,
+                  "name": "B",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 87,
+                  "src": "1449:1:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_B_$87",
+                    "typeString": "contract B"
+                  }
+                },
+                {
+                  "id": 126,
+                  "name": "C",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 118,
+                  "src": "1452:1:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_C_$118",
+                    "typeString": "contract C"
+                  }
+                }
+              ],
+              "src": "1440:14:1"
+            },
+            "parameters": {
+              "id": 124,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1430:2:1"
+            },
+            "returnParameters": {
+              "id": 128,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1455:0:1"
+            },
+            "scope": 148,
+            "src": "1418:67:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              86,
+              117
+            ],
+            "body": {
+              "id": 146,
+              "nodeType": "Block",
+              "src": "1530:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 141,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967271,
+                        "src": "1541:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_D_$148",
+                          "typeString": "contract super D"
+                        }
+                      },
+                      "id": 143,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bar",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 117,
+                      "src": "1541:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 144,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1541:11:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 145,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1541:11:1"
+                }
+              ]
+            },
+            "functionSelector": "febb0f7e",
+            "id": 147,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bar",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 139,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [
+                {
+                  "id": 137,
+                  "name": "B",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 87,
+                  "src": "1524:1:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_B_$87",
+                    "typeString": "contract B"
+                  }
+                },
+                {
+                  "id": 138,
+                  "name": "C",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 118,
+                  "src": "1527:1:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_C_$118",
+                    "typeString": "contract C"
+                  }
+                }
+              ],
+              "src": "1515:14:1"
+            },
+            "parameters": {
+              "id": 136,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1505:2:1"
+            },
+            "returnParameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1530:0:1"
+            },
+            "scope": 148,
+            "src": "1493:67:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 149,
+        "src": "1062:501:1"
+      }
+    ],
+    "src": "35:1528:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/F/ETHDapp/call_parent_contract/contracts/calling_parent_contracts.sol",
+      "exportedSymbols": {
+        "A": [
+          56
+        ],
+        "B": [
+          87
+        ],
+        "C": [
+          118
+        ],
+        "D": [
+          148
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "35:23:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            56
+          ],
+          "name": "A",
+          "scope": 149
+        },
+        "children": [
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "Log"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "     this is called an event. you can emit events from your func\n  and they are logged into the transaction log. in our case, this\n  will be useful for tracing func calls."
+                },
+                "id": 35,
+                "name": "StructuredDocumentation",
+                "src": "167:206:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "message",
+                      "scope": 39,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 36,
+                        "name": "ElementaryTypeName",
+                        "src": "389:6:1"
+                      }
+                    ],
+                    "id": 37,
+                    "name": "VariableDeclaration",
+                    "src": "389:14:1"
+                  }
+                ],
+                "id": 38,
+                "name": "ParameterList",
+                "src": "388:16:1"
+              }
+            ],
+            "id": 39,
+            "name": "EventDefinition",
+            "src": "379:26:1"
+          },
+          {
+            "attributes": {
+              "functionSelector": "c2985578",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "foo",
+              "scope": 56,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 40,
+                "name": "ParameterList",
+                "src": "425:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 41,
+                "name": "ParameterList",
+                "src": "443:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_aff7fe0850e7e0b7c8475c280dd429d9d5d20a3ef9ac49267457767b659bf36a",
+                                  "typeString": "literal_string \"A.foo called\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 39,
+                              "type": "function (string memory)",
+                              "value": "Log"
+                            },
+                            "id": 42,
+                            "name": "Identifier",
+                            "src": "459:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "412e666f6f2063616c6c6564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"A.foo called\"",
+                              "value": "A.foo called"
+                            },
+                            "id": 43,
+                            "name": "Literal",
+                            "src": "463:14:1"
+                          }
+                        ],
+                        "id": 44,
+                        "name": "FunctionCall",
+                        "src": "459:19:1"
+                      }
+                    ],
+                    "id": 45,
+                    "name": "EmitStatement",
+                    "src": "454:24:1"
+                  }
+                ],
+                "id": 46,
+                "name": "Block",
+                "src": "443:43:1"
+              }
+            ],
+            "id": 47,
+            "name": "FunctionDefinition",
+            "src": "413:73:1"
+          },
+          {
+            "attributes": {
+              "functionSelector": "febb0f7e",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "bar",
+              "scope": 56,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 48,
+                "name": "ParameterList",
+                "src": "506:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 49,
+                "name": "ParameterList",
+                "src": "524:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_01f293caacb98a5729d14272de2a7fc0f5d8b7a937c671b893f5e2e90b7239f2",
+                                  "typeString": "literal_string \"A.bar called\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 39,
+                              "type": "function (string memory)",
+                              "value": "Log"
+                            },
+                            "id": 50,
+                            "name": "Identifier",
+                            "src": "540:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "412e6261722063616c6c6564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"A.bar called\"",
+                              "value": "A.bar called"
+                            },
+                            "id": 51,
+                            "name": "Literal",
+                            "src": "544:14:1"
+                          }
+                        ],
+                        "id": 52,
+                        "name": "FunctionCall",
+                        "src": "540:19:1"
+                      }
+                    ],
+                    "id": 53,
+                    "name": "EmitStatement",
+                    "src": "535:24:1"
+                  }
+                ],
+                "id": 54,
+                "name": "Block",
+                "src": "524:43:1"
+              }
+            ],
+            "id": 55,
+            "name": "FunctionDefinition",
+            "src": "494:73:1"
+          }
+        ],
+        "id": 56,
+        "name": "ContractDefinition",
+        "src": "149:421:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            56
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            87,
+            56
+          ],
+          "name": "B",
+          "scope": 149
+        },
+        "children": [
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "A",
+                  "referencedDeclaration": 56,
+                  "type": "contract A"
+                },
+                "id": 57,
+                "name": "UserDefinedTypeName",
+                "src": "588:1:1"
+              }
+            ],
+            "id": 58,
+            "name": "InheritanceSpecifier",
+            "src": "588:1:1"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                47
+              ],
+              "functionSelector": "c2985578",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "foo",
+              "scope": 87,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 60,
+                "name": "OverrideSpecifier",
+                "src": "627:8:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 59,
+                "name": "ParameterList",
+                "src": "609:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 61,
+                "name": "ParameterList",
+                "src": "636:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_7a22a72f40d467eb9d326233f9c02898ad0769feb2ba5194074da17678097b61",
+                                  "typeString": "literal_string \"B.foo called\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 39,
+                              "type": "function (string memory)",
+                              "value": "Log"
+                            },
+                            "id": 62,
+                            "name": "Identifier",
+                            "src": "652:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "422e666f6f2063616c6c6564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"B.foo called\"",
+                              "value": "B.foo called"
+                            },
+                            "id": 63,
+                            "name": "Literal",
+                            "src": "656:14:1"
+                          }
+                        ],
+                        "id": 64,
+                        "name": "FunctionCall",
+                        "src": "652:19:1"
+                      }
+                    ],
+                    "id": 65,
+                    "name": "EmitStatement",
+                    "src": "647:24:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "foo",
+                              "referencedDeclaration": 47,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 56,
+                                  "type": "type(contract A)",
+                                  "value": "A"
+                                },
+                                "id": 66,
+                                "name": "Identifier",
+                                "src": "682:1:1"
+                              }
+                            ],
+                            "id": 68,
+                            "name": "MemberAccess",
+                            "src": "682:5:1"
+                          }
+                        ],
+                        "id": 69,
+                        "name": "FunctionCall",
+                        "src": "682:7:1"
+                      }
+                    ],
+                    "id": 70,
+                    "name": "ExpressionStatement",
+                    "src": "682:7:1"
+                  }
+                ],
+                "id": 71,
+                "name": "Block",
+                "src": "636:61:1"
+              }
+            ],
+            "id": 72,
+            "name": "FunctionDefinition",
+            "src": "597:100:1"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                55
+              ],
+              "functionSelector": "febb0f7e",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "bar",
+              "scope": 87,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 74,
+                "name": "OverrideSpecifier",
+                "src": "735:8:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 73,
+                "name": "ParameterList",
+                "src": "717:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 75,
+                "name": "ParameterList",
+                "src": "744:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_5a12cfe19ac77059e10524b1bcc378fb62d9c0c87c163e24493cf51450580d21",
+                                  "typeString": "literal_string \"B.bar called\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 39,
+                              "type": "function (string memory)",
+                              "value": "Log"
+                            },
+                            "id": 76,
+                            "name": "Identifier",
+                            "src": "760:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "422e6261722063616c6c6564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"B.bar called\"",
+                              "value": "B.bar called"
+                            },
+                            "id": 77,
+                            "name": "Literal",
+                            "src": "764:14:1"
+                          }
+                        ],
+                        "id": 78,
+                        "name": "FunctionCall",
+                        "src": "760:19:1"
+                      }
+                    ],
+                    "id": 79,
+                    "name": "EmitStatement",
+                    "src": "755:24:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "bar",
+                              "referencedDeclaration": 55,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4294967271,
+                                  "type": "contract super B",
+                                  "value": "super"
+                                },
+                                "id": 80,
+                                "name": "Identifier",
+                                "src": "790:5:1"
+                              }
+                            ],
+                            "id": 82,
+                            "name": "MemberAccess",
+                            "src": "790:9:1"
+                          }
+                        ],
+                        "id": 83,
+                        "name": "FunctionCall",
+                        "src": "790:11:1"
+                      }
+                    ],
+                    "id": 84,
+                    "name": "ExpressionStatement",
+                    "src": "790:11:1"
+                  }
+                ],
+                "id": 85,
+                "name": "Block",
+                "src": "744:65:1"
+              }
+            ],
+            "id": 86,
+            "name": "FunctionDefinition",
+            "src": "705:104:1"
+          }
+        ],
+        "id": 87,
+        "name": "ContractDefinition",
+        "src": "574:238:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            56
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            118,
+            56
+          ],
+          "name": "C",
+          "scope": 149
+        },
+        "children": [
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "A",
+                  "referencedDeclaration": 56,
+                  "type": "contract A"
+                },
+                "id": 88,
+                "name": "UserDefinedTypeName",
+                "src": "830:1:1"
+              }
+            ],
+            "id": 89,
+            "name": "InheritanceSpecifier",
+            "src": "830:1:1"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                47
+              ],
+              "functionSelector": "c2985578",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "foo",
+              "scope": 118,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 91,
+                "name": "OverrideSpecifier",
+                "src": "869:8:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 90,
+                "name": "ParameterList",
+                "src": "851:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 92,
+                "name": "ParameterList",
+                "src": "878:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_2faa1e609daeae0091a9f71574dcf852f84d99195ef4efdd3eea30531747813a",
+                                  "typeString": "literal_string \"C.foo called\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 39,
+                              "type": "function (string memory)",
+                              "value": "Log"
+                            },
+                            "id": 93,
+                            "name": "Identifier",
+                            "src": "894:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "432e666f6f2063616c6c6564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"C.foo called\"",
+                              "value": "C.foo called"
+                            },
+                            "id": 94,
+                            "name": "Literal",
+                            "src": "898:14:1"
+                          }
+                        ],
+                        "id": 95,
+                        "name": "FunctionCall",
+                        "src": "894:19:1"
+                      }
+                    ],
+                    "id": 96,
+                    "name": "EmitStatement",
+                    "src": "889:24:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "foo",
+                              "referencedDeclaration": 47,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4294967271,
+                                  "type": "contract super C",
+                                  "value": "super"
+                                },
+                                "id": 97,
+                                "name": "Identifier",
+                                "src": "924:5:1"
+                              }
+                            ],
+                            "id": 99,
+                            "name": "MemberAccess",
+                            "src": "924:9:1"
+                          }
+                        ],
+                        "id": 100,
+                        "name": "FunctionCall",
+                        "src": "924:11:1"
+                      }
+                    ],
+                    "id": 101,
+                    "name": "ExpressionStatement",
+                    "src": "924:11:1"
+                  }
+                ],
+                "id": 102,
+                "name": "Block",
+                "src": "878:65:1"
+              }
+            ],
+            "id": 103,
+            "name": "FunctionDefinition",
+            "src": "839:104:1"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                55
+              ],
+              "functionSelector": "febb0f7e",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "bar",
+              "scope": 118,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 105,
+                "name": "OverrideSpecifier",
+                "src": "981:8:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 104,
+                "name": "ParameterList",
+                "src": "963:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 106,
+                "name": "ParameterList",
+                "src": "990:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_62a3c18800e777677fd9be41fd72394293bef1b7ebbfea4ef0330229c8bd9bbc",
+                                  "typeString": "literal_string \"C.bar called\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 39,
+                              "type": "function (string memory)",
+                              "value": "Log"
+                            },
+                            "id": 107,
+                            "name": "Identifier",
+                            "src": "1006:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "432e6261722063616c6c6564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"C.bar called\"",
+                              "value": "C.bar called"
+                            },
+                            "id": 108,
+                            "name": "Literal",
+                            "src": "1010:14:1"
+                          }
+                        ],
+                        "id": 109,
+                        "name": "FunctionCall",
+                        "src": "1006:19:1"
+                      }
+                    ],
+                    "id": 110,
+                    "name": "EmitStatement",
+                    "src": "1001:24:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "bar",
+                              "referencedDeclaration": 55,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4294967271,
+                                  "type": "contract super C",
+                                  "value": "super"
+                                },
+                                "id": 111,
+                                "name": "Identifier",
+                                "src": "1036:5:1"
+                              }
+                            ],
+                            "id": 113,
+                            "name": "MemberAccess",
+                            "src": "1036:9:1"
+                          }
+                        ],
+                        "id": 114,
+                        "name": "FunctionCall",
+                        "src": "1036:11:1"
+                      }
+                    ],
+                    "id": 115,
+                    "name": "ExpressionStatement",
+                    "src": "1036:11:1"
+                  }
+                ],
+                "id": 116,
+                "name": "Block",
+                "src": "990:65:1"
+              }
+            ],
+            "id": 117,
+            "name": "FunctionDefinition",
+            "src": "951:104:1"
+          }
+        ],
+        "id": 118,
+        "name": "ContractDefinition",
+        "src": "816:242:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            56,
+            87,
+            118
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            148,
+            118,
+            87,
+            56
+          ],
+          "name": "D",
+          "scope": 149
+        },
+        "children": [
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "B",
+                  "referencedDeclaration": 87,
+                  "type": "contract B"
+                },
+                "id": 119,
+                "name": "UserDefinedTypeName",
+                "src": "1076:1:1"
+              }
+            ],
+            "id": 120,
+            "name": "InheritanceSpecifier",
+            "src": "1076:1:1"
+          },
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "C",
+                  "referencedDeclaration": 118,
+                  "type": "contract C"
+                },
+                "id": 121,
+                "name": "UserDefinedTypeName",
+                "src": "1079:1:1"
+              }
+            ],
+            "id": 122,
+            "name": "InheritanceSpecifier",
+            "src": "1079:1:1"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                72,
+                103
+              ],
+              "functionSelector": "c2985578",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "foo",
+              "scope": 148,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " Try:\n - call D.foo and check the transaction logs.\n   although D inherits A, B and C, it only called C and then A.\n - call D.bar and check the transaction logs.\n   D called C, then B, and finally A.\n   although super was called twice(by B and C) it only called A once."
+                },
+                "id": 123,
+                "name": "StructuredDocumentation",
+                "src": "1088:324:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "B",
+                      "referencedDeclaration": 87,
+                      "type": "contract B"
+                    },
+                    "id": 125,
+                    "name": "UserDefinedTypeName",
+                    "src": "1449:1:1"
+                  },
+                  {
+                    "attributes": {
+                      "name": "C",
+                      "referencedDeclaration": 118,
+                      "type": "contract C"
+                    },
+                    "id": 126,
+                    "name": "UserDefinedTypeName",
+                    "src": "1452:1:1"
+                  }
+                ],
+                "id": 127,
+                "name": "OverrideSpecifier",
+                "src": "1440:14:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 124,
+                "name": "ParameterList",
+                "src": "1430:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 128,
+                "name": "ParameterList",
+                "src": "1455:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "foo",
+                              "referencedDeclaration": 103,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4294967271,
+                                  "type": "contract super D",
+                                  "value": "super"
+                                },
+                                "id": 129,
+                                "name": "Identifier",
+                                "src": "1466:5:1"
+                              }
+                            ],
+                            "id": 131,
+                            "name": "MemberAccess",
+                            "src": "1466:9:1"
+                          }
+                        ],
+                        "id": 132,
+                        "name": "FunctionCall",
+                        "src": "1466:11:1"
+                      }
+                    ],
+                    "id": 133,
+                    "name": "ExpressionStatement",
+                    "src": "1466:11:1"
+                  }
+                ],
+                "id": 134,
+                "name": "Block",
+                "src": "1455:30:1"
+              }
+            ],
+            "id": 135,
+            "name": "FunctionDefinition",
+            "src": "1418:67:1"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                86,
+                117
+              ],
+              "functionSelector": "febb0f7e",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "bar",
+              "scope": 148,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "B",
+                      "referencedDeclaration": 87,
+                      "type": "contract B"
+                    },
+                    "id": 137,
+                    "name": "UserDefinedTypeName",
+                    "src": "1524:1:1"
+                  },
+                  {
+                    "attributes": {
+                      "name": "C",
+                      "referencedDeclaration": 118,
+                      "type": "contract C"
+                    },
+                    "id": 138,
+                    "name": "UserDefinedTypeName",
+                    "src": "1527:1:1"
+                  }
+                ],
+                "id": 139,
+                "name": "OverrideSpecifier",
+                "src": "1515:14:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 136,
+                "name": "ParameterList",
+                "src": "1505:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 140,
+                "name": "ParameterList",
+                "src": "1530:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "bar",
+                              "referencedDeclaration": 117,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4294967271,
+                                  "type": "contract super D",
+                                  "value": "super"
+                                },
+                                "id": 141,
+                                "name": "Identifier",
+                                "src": "1541:5:1"
+                              }
+                            ],
+                            "id": 143,
+                            "name": "MemberAccess",
+                            "src": "1541:9:1"
+                          }
+                        ],
+                        "id": 144,
+                        "name": "FunctionCall",
+                        "src": "1541:11:1"
+                      }
+                    ],
+                    "id": 145,
+                    "name": "ExpressionStatement",
+                    "src": "1541:11:1"
+                  }
+                ],
+                "id": 146,
+                "name": "Block",
+                "src": "1530:30:1"
+              }
+            ],
+            "id": 147,
+            "name": "FunctionDefinition",
+            "src": "1493:67:1"
+          }
+        ],
+        "id": 148,
+        "name": "ContractDefinition",
+        "src": "1062:501:1"
+      }
+    ],
+    "id": 149,
+    "name": "SourceUnit",
+    "src": "35:1528:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {
+        "0xcf34ef537ac33ee1ac626ca1587a0a7e8e51561e5514f8cb36afa1c5102b3bab": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "message",
+              "type": "string"
+            }
+          ],
+          "name": "Log",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xA2AF5Ac65e75f4fe74651E0578f16F77517139ae",
+      "transactionHash": "0x1414a233530565a8f77e352f6d4f96c737a29d874d9fda671aa90ab84c03ecc3"
+    }
+  },
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-01-13T07:27:42.254Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "Log(string)": {
+        "notice": "this is called an event. you can emit events from your func  and they are logged into the transaction log. in our case, this  will be useful for tracing func calls."
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "foo()": {
+        "notice": "Try: - call D.foo and check the transaction logs.   although D inherits A, B and C, it only called C and then A. - call D.bar and check the transaction logs.   D called C, then B, and finally A.   although super was called twice(by B and C) it only called A once."
+      }
+    },
+    "version": 1
+  }
+}
